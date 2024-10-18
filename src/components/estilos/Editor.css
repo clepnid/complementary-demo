@@ -1,0 +1,96 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #f0f4f8; /* Color de fondo suave */
+  font-family: 'Arial', sans-serif; /* Fuente moderna */
+  padding: 20px; /* Añadir un poco de padding */
+}
+
+.image-upload-input{
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  width: 100%; /* Hacer que ocupe el 100% de su contenedor */
+  max-width: 400px; /* Ancho máximo para el input */
+}
+
+.image-upload-input:hover {
+  border-color: #007bff; /* Cambia el color del borde al pasar el mouse */
+}
+
+.cyclic-label, .invert-label, .boomerang-label, .opacity-label, .fps-label {
+  margin-top: 10px;
+  display: block;
+  text-align: center; /* Centrar horizontalmente el contenido */
+  width: 100%; /* Asegura que la etiqueta ocupe el ancho completo */
+}
+
+.cyclic-input, .invert-input, .boomerang-input, .opacity-input, .fps-input {
+  margin-left: 5px;
+}
+
+.animation-label, .image-upload-label, .orientation-label, .color-scheme-label {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centrando el contenido dentro del label */
+}
+
+.animation-select, .orientation-select, .color-scheme-select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
+  width: 100%; /* Hacer que ocupe el 100% de su contenedor */
+  max-width: 400px; /* Ancho máximo para el select */
+}
+
+.animation-select:hover, .orientation-select:hover, .color-scheme-select:hover {
+  border-color: #FF00FF; /* Cambia el color del borde al pasar el mouse */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Espaciado entre los botones */
+  margin-top: 10px;
+}
+
+.select-colors-button, .change-colors-button, .ver-codigo, .btn-descargar {
+  background-color: #FF00FF; /* Color de fondo del botón */
+  color: white; /* Color del texto */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  width: 50%; /* Ancho del 50% */
+  min-width: 100px; /* Ancho mínimo de 100px */
+}
+
+.select-colors-button:hover, .change-colors-button:hover {
+  background-color: #b814b8; /* Color más oscuro al pasar el mouse */
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block; 
+}
+
+/* Añadidos estilos para la disposición de la página */
+label {
+  width: 100%; /* Asegura que las etiquetas ocupen el ancho completo */
+}
+
+.photoshop-picker {
+  max-width: 80vw !important;
+}

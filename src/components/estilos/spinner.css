@@ -1,0 +1,30 @@
+.spinner {
+    animation: fadeIn 0.5s ease-in-out; /* Añadir animación de entrada */
+  }
+  
+  .spinner-message {
+    font-size: 1.5rem;
+    color: #333; /* Color del texto */
+    animation: blink 1s infinite; /* Añadir animación de parpadeo */
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Animación de parpadeo */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
